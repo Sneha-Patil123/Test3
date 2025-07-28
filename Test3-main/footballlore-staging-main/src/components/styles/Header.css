@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--green);
+  color: var(--white);
+  padding: var(--padding);
+}
+
+.logo {
+  font-family: var(--font-headline);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  font-weight: 600;
+  color: var(--white);
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.ghost-button {
+  border: 1px solid var(--gold);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  background: transparent;
+  color: var(--gold);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ghost-button:hover {
+  background-color: var(--gold);
+  color: var(--green);
+}
