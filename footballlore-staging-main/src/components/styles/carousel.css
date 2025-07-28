@@ -1,0 +1,99 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #2e7d32;
+  padding: 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  position: relative;
+}
+
+.story-card {
+  background: #ffffff;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.story-snippet {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.story-author {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #555;
+}
+
+.nav-btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 0 15px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #1b5e20;
+  transform: scale(1.1);
+  transition: all 200ms ease-in-out;
+}
+.nav-btn:active {
+  background-color: #2e7d32;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* All Device Compability */
+
+@media (max-width: 768px) {
+  .carousel-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .story-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  .nav-btn {
+    font-size: 1.5rem;
+    padding: 10px 14px;
+    margin-top: 0.5rem;
+  }
+}

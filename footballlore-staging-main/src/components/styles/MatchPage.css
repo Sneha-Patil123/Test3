@@ -1,0 +1,33 @@
+.match-page {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sponsor-form input,
+.sponsor-form button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.sponsor-form button {
+  background-color: var(--green);
+  color: white;
+  cursor: pointer;
+}
+
+.sponsor-form button:hover {
+  background-color: #1b5e20;
+}
